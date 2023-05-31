@@ -1,0 +1,56 @@
+.home .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+ .home .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home{
+    margin-top: 20px;
+  }
+.home .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 40%;
+    height: 240px;
+    padding: 25px;
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .home .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .main {
+    /* margin-top: 100px; */
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+/* h1 {
+    margin: 10px;
+    font-size: 40px;
+    color: rgb(1, 1, 59);
+} */
+
+.search {
+    width: 30%;
+}
+
+ul li {
+    font-size: 20px;
+} 
